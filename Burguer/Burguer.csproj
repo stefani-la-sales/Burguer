@@ -14,7 +14,7 @@
     <RootNamespace>Burguer</RootNamespace>
     <AssemblyName>Burguer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44312</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
@@ -67,16 +67,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contents\Bootstrap\bootstrap-theme.css" />
+    <Content Include="Contents\Bootstrap\Bootstrap.css" />
+    <Content Include="Contents\Bootstrap\Bootstrap_1010123.css" />
+    <Content Include="Contents\Bootstrap\Bootstrap_v4.css" />
+    <Content Include="Contents\glyphicons-halflings-regular.svg" />
+    <Content Include="Contents\glyphicons.css" />
     <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
+    <Content Include="Scripts\bootstrap_v4.bundle.js" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contents\glyphicons-halflings-regular.eot" />
+    <Content Include="Contents\glyphicons-halflings-regular.ttf" />
+    <Content Include="Contents\glyphicons-halflings-regular.woff" />
+    <Content Include="Contents\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -87,7 +108,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Contents\Fonts\" />
+    <Folder Include="Contents\Images\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConnectionFactory\ConnectionFactory.csproj">
+      <Project>{e2487868-81f2-472c-824f-66f1f64dea1d}</Project>
+      <Name>ConnectionFactory</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -104,7 +133,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54200</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44312/</IISUrl>
+          <IISUrl>http://localhost/Burguer</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
