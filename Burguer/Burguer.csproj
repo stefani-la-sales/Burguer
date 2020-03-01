@@ -67,29 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cardapio.aspx" />
     <Content Include="Contents\Bootstrap\bootstrap-theme.css" />
     <Content Include="Contents\Bootstrap\Bootstrap.css" />
     <Content Include="Contents\Bootstrap\Bootstrap_1010123.css" />
     <Content Include="Contents\Bootstrap\Bootstrap_v4.css" />
     <Content Include="Contents\glyphicons-halflings-regular.svg" />
     <Content Include="Contents\glyphicons.css" />
+    <Content Include="Contents\Images\hamburguer.png" />
+    <Content Include="Contents\main.css" />
     <Content Include="Global.asax" />
-    <Content Include="index.aspx" />
     <Content Include="Scripts\bootstrap_v4.bundle.js" />
     <Content Include="Scripts\jquery-1.11.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="BurguerMaster.Master.cs">
+      <DependentUpon>BurguerMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="BurguerMaster.Master.designer.cs">
+      <DependentUpon>BurguerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="cardapio.aspx.cs">
+      <DependentUpon>cardapio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cardapio.aspx.designer.cs">
+      <DependentUpon>cardapio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -98,6 +107,7 @@
     <Content Include="Contents\glyphicons-halflings-regular.ttf" />
     <Content Include="Contents\glyphicons-halflings-regular.woff" />
     <Content Include="Contents\glyphicons-halflings-regular.woff2" />
+    <Content Include="BurguerMaster.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -109,7 +119,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Contents\Fonts\" />
-    <Folder Include="Contents\Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

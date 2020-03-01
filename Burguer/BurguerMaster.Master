@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BurguerMaster.master.cs" Inherits="Burguer.BurguerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta id="metaView" name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="Contents/Bootstrap/Bootstrap_v4.css" rel="stylesheet" />
+    <link href="Contents/glyphicons.css" rel="stylesheet" />
+    <link href="Contents/main.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap_v4.bundle.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-burguer fixed-top" role="navigation">
+                <div></div>
+                <a class="navbar-brand" href="."><img src="Contents/Images/hamburguer.png" /></a>
+		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="glyphicon glyphicon-menu-hamburger"></span><span class="glyphicon glyphicon-chevron-up"></span>
+		        </button>
+		        
+
+		        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-right">
+				        <li class="nav-item">
+					        <a class="nav-link frame-link" href="Home">Home</a>
+				        </li>
+				        <li class="nav-item">
+					        <a class="nav-link frame-link" href="Bin2Dec">Bin2Dec</a>
+				        </li>
+				        <li class="nav-item">
+					        <a class="nav-link frame-link" href="Border-Radius">Border-Radius</a>
+				        </li>
+				        <li class="nav-item">
+					        <a class="nav-link frame-link" href="Calculator-App">Calculator-App</a>
+				        </li>
+				        <li class="nav-item">
+					        <a class="nav-link frame-link" href="Christmas-Lights-App">Christmas-Lights-App</a>
+				        </li>
+			        </ul>
+		        </div>
+	        </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
