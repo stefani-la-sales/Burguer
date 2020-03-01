@@ -112,12 +112,6 @@
     <Folder Include="Contents\Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ConnectionFactory\ConnectionFactory.csproj">
-      <Project>{e2487868-81f2-472c-824f-66f1f64dea1d}</Project>
-      <Name>ConnectionFactory</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
