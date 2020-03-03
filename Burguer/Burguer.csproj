@@ -74,9 +74,13 @@
     <Content Include="Contents\Bootstrap\Bootstrap_v4.css" />
     <Content Include="Contents\glyphicons-halflings-regular.svg" />
     <Content Include="Contents\glyphicons.css" />
+    <Content Include="Contents\Images\burguer1.png" />
+    <Content Include="Contents\Images\burguer2.png" />
+    <Content Include="Contents\Images\burguer3.png" />
     <Content Include="Contents\Images\hamburguer.png" />
     <Content Include="Contents\main.css" />
     <Content Include="Global.asax" />
+    <Content Include="login.aspx" />
     <Content Include="Scripts\bootstrap_v4.bundle.js" />
     <Content Include="Scripts\jquery-1.11.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -99,6 +103,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

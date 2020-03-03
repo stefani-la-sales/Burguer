@@ -31,19 +31,19 @@
 		        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-right">
 				        <li class="nav-item">
-					        <a class="nav-link frame-link" href="Home">Home</a>
+					        <a class="nav-link" href="#">Link 1</a>
 				        </li>
 				        <li class="nav-item">
-					        <a class="nav-link frame-link" href="Bin2Dec">Bin2Dec</a>
+					        <a class="nav-link" href="#">Link 2</a>
 				        </li>
 				        <li class="nav-item">
-					        <a class="nav-link frame-link" href="Border-Radius">Border-Radius</a>
+					        <a class="nav-link" href="#">Link 3</a>
 				        </li>
 				        <li class="nav-item">
-					        <a class="nav-link frame-link" href="Calculator-App">Calculator-App</a>
+					        <a class="nav-link" href="#">Link 4</a>
 				        </li>
 				        <li class="nav-item">
-					        <a class="nav-link frame-link" href="Christmas-Lights-App">Christmas-Lights-App</a>
+					        <a class="nav-link" href="#">Link 5</a>
 				        </li>
 			        </ul>
 		        </div>
